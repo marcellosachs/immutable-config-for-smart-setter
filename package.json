@@ -1,0 +1,17 @@
+{
+  "name": "immutable-config-for-smart-setter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && babel src -d lib"
+  },
+  "author": "Marcello Sachs <marcello.sachs@gmail.com> (https://github.com/marcellosachs)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2"
+  }
+}
