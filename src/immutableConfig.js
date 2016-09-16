@@ -11,7 +11,7 @@ const immutableConfig = {
     return $$obj.keySeq().toArray()
   },
   isObjectOrMap: $$item => {
-    return Im.Map.isMap(item)
+    return Im.Map.isMap($$item)
   },
   isArrayOrList: $$item => {
     return Im.List.isList($$item)
