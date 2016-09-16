@@ -1,5 +1,7 @@
 import Im from 'immutable';
 
+const I = item => Im.fromJS({key1: item}).get('key1')
+
 const immutableConfig = {
   get: ($$obj, propKey) => {
     return $$obj.get(propKey)
@@ -21,6 +23,12 @@ const immutableConfig = {
   },
   clone: $$obj => {
     return $$obj // no need to clone since object is immutable
+  },
+  emptyObjectOrMap: () => {
+    return I({})
+  },
+  emptyListOrArray: () => {
+    return I([])
   },
 }
 
