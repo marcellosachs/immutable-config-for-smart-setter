@@ -30,6 +30,7 @@ const immutableConfig = {
   emptyListOrArray: () => {
     return I([])
   },
+  toThisConfigsType: item => I(item),
 }
 
 export default immutableConfig
