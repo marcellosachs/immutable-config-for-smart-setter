@@ -31,6 +31,7 @@ const immutableConfig = {
     return I([])
   },
   toThisConfigsType: item => I(item),
+  merge: ($$obj1, $$obj2) => $$obj1.merge($$obj2),
 }
 
 export default immutableConfig
